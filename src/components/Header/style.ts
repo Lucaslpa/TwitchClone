@@ -12,6 +12,7 @@ import Delete from'@styled-icons/typicons/DeleteOutline'
 import  {Twitch} from'@styled-icons/fa-brands'
 
 export const Container = styled.div` 
+position: sticky; 
 display: flex; 
 justify-content: space-between;
 width: 100%;
@@ -28,18 +29,23 @@ box-shadow: -1px 1px 4px -1px rgba(168,166,168,1);
 
 export const ContainerGeralMenu = styled.div` 
 display: flex; 
-justify-content: space-around; 
+
 align-items: center; 
 width: 33%; 
+
 `
 export const TwitchImg = styled(Twitch)`
 width: max(1.5vw , min(4vw , 2vw));
-fill: blue!important; 
+fill: blue; 
+margin-left: 1vw;
+
 
 `
 export const LinksMenu = styled.a`
 font-family: 'Quicksand', sans-serif;
-font-size: 1.2vw; 
+font-size: 1.1vw; 
+margin-left: 1vw;
+
 
  :hover { 
       color: #b104d4;
@@ -49,13 +55,13 @@ font-size: 1.2vw;
 
 
 export const HorizontalMenu = styled(MoreHorizontalOutline)` 
- width: 2vw; 
- padding: 2px; 
- border-radius: 3px; 
- cursor: pointer;
- :hover { 
-     background: #cfcfcf
- }
+ padding: 5px;
+width: 1.1vw; 
+margin-left: 1vw;
+:hover { 
+    border-radius: 0.3vw;
+ background: #cfcfcf;
+}
 
 `
 
@@ -151,11 +157,14 @@ export const ContainerUserInfo = styled.div`
       align-items: center;
       justify-content: center; 
       left: 35% ;
-      width: 2vw; 
+      width: 1vw; 
       height: 1.2vw;
       border-radius: 2vw;
       background:red; 
       color: white;
+      span { 
+          font-size: 1px;
+      }
     }
     .HoverText {   
       display:none;
@@ -179,8 +188,9 @@ export const ContainerUserInfo = styled.div`
    }
 }
 .BuyBits { 
-    font-size: 1vw;
+    font-size: 0.9vw;
     padding: 6px;
+    font-family: Roboto;
 :hover { 
     border-radius: 0.3vw;
  background: #cfcfcf;
@@ -199,7 +209,7 @@ align-items: center;
 `
 export const Sino = styled(Bell)`
  padding:5px;
-width: 1.5vw; 
+width: 1.1vw; 
 div{ 
     position: absolute;
     
@@ -214,7 +224,7 @@ div{
 `
 export const Chat = styled(ChatSquare)`
 padding: 5px;
-width: 1.5vw; 
+width: 1.1vw; 
 position: relative;
 
 :hover { 
@@ -224,9 +234,10 @@ position: relative;
 `
 export const Crown = styled(VipCrown)` 
 padding: 5px;
-width: 1.5vw; 
+width: 1.1vw; 
 :hover { 
     border-radius: 0.3vw;
  background: #cfcfcf;
 }
 `
+

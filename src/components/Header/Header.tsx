@@ -3,16 +3,17 @@ import { Container , TwitchImg , LinksMenu , ContainerGeralMenu
 ,ContainerSearch,ContainerUserInfo, HorizontalMenu
 , InputSearch,SearchImg , SearchImgContainer , 
 Chat,
-Crown,Sino , HorizontalMenuContainer,HorizontalMenuNav
-} from './style'
-
+Crown,Sino , HorizontalMenuContainer,HorizontalMenuNav} from './style'
+import ButtonIcon from '../buttonIcon/button'
 
 function App() {
 
     const [menu , setMenu] = useState(false)
 
   
-
+   function toggleMenu () { 
+    setMenu(!menu)
+   }
 
   return (
    <Container>
@@ -22,8 +23,14 @@ function App() {
        <LinksMenu> Procurar </LinksMenu>
        <LinksMenu>  Esports </LinksMenu>
        <LinksMenu>  Musica </LinksMenu>
-       <HorizontalMenuContainer onClick={() => setMenu(!menu)} >
-                   <HorizontalMenu/>  
+       <HorizontalMenuContainer  onClick={(e) => setMenu(!menu)} >
+             <ButtonIcon>
+                     <HorizontalMenu/> 
+                     <div className='HoverText' >
+                        <span> Mais </span>
+                     </div>
+             </ButtonIcon>
+                   
                   {menu && ( <HorizontalMenuNav>
                        <strong>Geral</strong>
                        <li> Anunciantes</li>
@@ -40,26 +47,29 @@ function App() {
              </SearchImgContainer>        
        </ContainerSearch>
        <ContainerUserInfo>
-           <div className='UtilToIcon'>
+           <ButtonIcon>
                      <Crown/>
                     <div className='HoverText' >
-                        <span> Novo loot prime </span>
-                    
+                        <span> Novo loot prime </span>           
                     </div>
-           </div>      
-           <div className='UtilToIcon'  >
-                <div className='Notification' >2</div>
+           </ButtonIcon>
+                   
+               
+           <ButtonIcon>
+                <div className='Notification' >
+                    <span className='numberNotification' > 2</span>
+                </div>
                 <Sino/>
                 <div className='HoverText' >
                     Notificações
                 </div>
-           </div>       
-           <div className='UtilToIcon' >
+                </ButtonIcon>  
+         <ButtonIcon>
                <Chat/> 
                <div className='HoverText' >
                     Sussurros
                 </div>
-          </div>
+         </ButtonIcon>
        
       
         <strong className='BuyBits'>
