@@ -4,11 +4,10 @@ import App from './pages/Home/TwitchHome';
 import {GlobalStyle} from './global/globalstyle'
 
 
-
 ReactDOM.render(
   <React.StrictMode>
     <GlobalStyle/> 
-    <App />
+    <App/>
   </React.StrictMode>,
   document.getElementById('root')
 );

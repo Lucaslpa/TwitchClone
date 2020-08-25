@@ -1,36 +1,125 @@
-import React from 'react'
+import React, {useEffect, useState} from 'react'
 import { Container } from './style'
-import Anime1 from './images/anime (1).jpg'
-import Anime2 from './images/anime (2).jpg'
-import Anime3 from './images/anime (3).jpg'
-import Anime4 from './images/anime (4).jpg'
-import Anime5 from './images/anime (5).jpg'
+import Data from './data'
+ 
+interface props { 
+    url: string 
+}
 
 function Carousel() { 
+
+  const [NewData, setData] = useState<number[]>([])
+  const [DataFinale , setFinale] = useState([''])
+  const [Classes , setClasses ] = useState(['First' , 'Second' , 'Terceiro' , 'Quarto' , 'Quinto'])
+
+
+ useEffect(() => { 
+              console.log('sim ' , DataFinale.length)
+ }, [DataFinale])
+
+ useEffect(() => {  }
+ , [NewData])
+ 
+  useEffect(() =>  {
+
+
+    var arr = [];
+    while (arr.length < 5)
+  {
+     const number =   Math.floor(Math.random() * 5)
+     if ( arr.indexOf(number) === -1 ) { 
+        arr.push(number)
+     }
+        
+    }
+  
+    var primeiro = arr[0]
+    var segundo = arr[1] 
+    var terceiro = arr[2]
+    var quarto = arr[3]
+    var quinto = arr[4]
+
+    const um = Data[primeiro]
+    const dois = Data[segundo] 
+    const tres = Data[quarto]
+    const quatro = Data[terceiro]
+    const cinco = Data[quinto]
+     
+    setFinale([um.url , dois.url, tres.url, quatro.url, cinco.url])
+    console.log(um , dois , tres, quatro, cinco) 
+
+  } , [])
+  
+  
+   function RollLeft() { 
+      
+    const newArray = [Classes[1] ,Classes[2] ,Classes[3] ,Classes[4] ,Classes[0]  ]
+ 
+       setClasses(newArray)
+   }
+
+   function RollRight() { 
+    const newArray = [Classes[4] ,Classes[0] ,Classes[1] ,Classes[2] ,Classes[3]  ]
+ 
+    setClasses(newArray)
+   }
+           
+  
      return ( 
        <Container>
 
-       <div className='Carousell' >
-       <div className='First' >
-             <img className='First' src={Anime1}/>
-             </div >
+       { 
+         DataFinale.length === 5 ?  ( 
+          <div className='Carousell' >
 
-             <div className='Second'>
-             <img className='Second' src={Anime2}/> 
-                   </div>
-                   <div className='Terceiro'>
-                   <img  src={Anime3} />
-                   <div className='StreamInfo'>
-                   </div> 
-                   </div>
-                   <div className='Quarto'>
-                   <img className='Quarto' src={Anime4}/> 
-                   </div>
-                   <div className='Quinto'>
-                   <img className='Quinto' src={Anime5}/> 
-                    </div>
-             
-          </div> 
+           <div 
+             onClick = {() => RollLeft()}
+
+           className='toleft' >
+              <strong>left</strong>
+           </div>
+
+          <div className={Classes[0]} >
+                    <iframe width="420" height="315"
+   src={DataFinale[0]}>
+   
+   </iframe>
+                     </div >
+   
+                      <div className={Classes[1]}>
+                      <iframe width="420" height="315"
+   src={DataFinale[1]}>
+   
+   </iframe>
+                      </div>
+                      <div className={Classes[2]}>
+                      <iframe width="420" height="315"
+   src={DataFinale[2]}>
+   
+   </iframe>
+                      </div>
+                      <div className={Classes[3]}>
+                      <iframe width="420" height="315"
+   src={DataFinale[3]}>
+   
+   </iframe>
+                      </div>
+                      <div className={Classes[4]}>
+                      <iframe width="420" height="315"
+   src={DataFinale[4]}>
+   
+   </iframe>
+                       </div>
+
+                       <div 
+                        onClick = {() => RollRight()}
+                       className='toright' >
+              <strong>right</strong>
+           </div>
+                
+             </div> 
+         ) : <div> <strong>load</strong> </div>
+       }
        </Container>
      )
 }

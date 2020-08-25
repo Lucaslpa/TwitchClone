@@ -152,6 +152,9 @@ padding: 0.3vw;
     border: 1px solid black;
 }
 div { 
+  display: flex; 
+  
+   height: 2vw;
     background: #e3e3e3;
     padding: 0.4vw;
     border-radius: 5px;
@@ -161,10 +164,11 @@ div {
 export const InputSearch = styled.input` 
 padding: 0.3vw;
 width: 13vw;
-height: 100%;
+height: 1vw;
 border:solid 1.5px  transparent;
 background: #e3e3e3;
 outline: none;
+font-size: 1vw;
 :focus { 
     border:solid 1.5px  #ab02e3
  } 

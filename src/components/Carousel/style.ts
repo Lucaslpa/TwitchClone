@@ -2,109 +2,124 @@ import styled from 'styled-components'
 
 
 export  const Container = styled.div` 
-   padding: 1.5vw;
-   height: 20vw;
-   display: flex;
-   justify-content: center;
-   align-items: center;  
-  position: relative;
-  .Carousell { 
-   display: flex;
-   justify-content: center;
-   align-items: center;  
-   width: 70vw;
-   border: solid 1px pink; 
-   position: relative;
 
-* { 
-   padding: 2%; 
+ .Carousell { 
+    display: flex; 
+    position: relative;
+    width: 100%;
+    height: 23vw;
+    justify-content: center;
+    align-items: center; 
+    padding: 1vw; 
+
+    .toleft { 
+       width: 3vw; 
+       position: absolute; 
+       display: flex;
+       justify-content: center; 
+       align-items: center; 
+       left: 10% ; 
+       height: 3vw;
+       background: black; 
+       color: white;
+       border-radius: 20px;
+       :hover { 
+         background: rgba(0,0,0,0.6)
+       }
+    }
+    .toright { 
+      width: 3vw; 
+      position: absolute; 
+      display: flex;
+       justify-content: center; 
+       align-items: center; 
+      right: 10%; 
+      height: 3vw; 
+      background: black; 
+       color: white;
+       border-radius: 20px;
+       :hover { 
+         background: rgba(0,0,0,0.6)
+       }
+    }
+  
+    div { 
+        height: 20vw;
+        width: 30vw ; 
+        position:absolute;
+        transition: 0.3s;
+       iframe { 
+         
+            height: 100%;
+            width: 100%;
+         
+        }
+    }
+
+.First {
+   height: 14vw;
+
+   right: 17% ; 
+   z-index: 5; 
+   width: 35vw;
+  :hover { 
+   right: 16.5%; 
+   height: 14.5vw;
+   width: 35.5vw;
+  }
 }
 
-   .Terceiro { 
-      position: absolute;
-      display: flex;
-      padding: 0px; 
-      justify-content: space-between;
-      height: 20vw;
-      width: 44vw;
-       right: 16.5% ; 
-      z-index: 10;
-      transition: 0.2s; 
-      background: white;
-      border: solid 1px black;
-      box-sizing: border-box;
-      img { 
-        
-         height:90%;
-         width: 60%;
-      }
-      
-      .StreamInfo { 
-         margin: 0px ; 
-         height: 90%;
-         width: 50%;
-         background: Blue;
-      }
+.Second { 
+    z-index:10; 
+    left: 21%; 
+    height: 17vw;
+    width: 38vw;
+    :hover { 
+     left: 20.5%; 
+     height: 17.5vw;
+     width: 38.5vw; 
+  }
+}
+
+.Terceiro { 
+ z-index: 20; 
+ width: 40vw;
+
+
+ .StreamInfo { 
      
-    
+  
      
-  }
-  .Second { 
-   height: 17.5vw;
-      width: 39vw;
-      left: 14% ; 
-      z-index: 6;
-      transition: 0.2s; 
-      :hover { 
-         height: 18vw;
-      width: 39.5vw;
-      left: 13.5%
-      }
-  }
-   
-    .Quarto { 
-      height: 17.5vw;
-      width: 39vw;
-  right: 14%; 
-      z-index: 6;
-      transition: 0.2s; 
-      :hover { 
-         height: 18vw;
-      width: 39.5vw;
-       right: 13.5%
-      }
-  }
+ }
 
-  .First { 
+}
+
+.Quarto { 
+  z-index: 10; 
+  right: 21%; 
+  height: 17vw;
+  width: 38vw;
+  :hover { 
+     right: 20.5%; 
+     height: 17.5vw;
+     width: 38.5vw; 
+  }
+}
+
+.Quinto { 
+   height: 14vw;
+ left: 17%; 
+  z-index: 5 ;
+  width: 35vw;
+  :hover { 
+   left: 16.5%; 
    height: 14.5vw;
-      width: 37vw;
-   left: 12%; 
-      z-index: 4;
-      transition: 0.2s; 
-      :hover { 
-         height: 15vw;
-      width: 37.5vw;
-      left: 11.5% ; 
-      }
+   width: 35.5vw;
   }
-  
- .Quinto  { 
-   height: 14.5vw;
-      width: 37vw;
-       right: 12% ; 
-      z-index: 2 ; 
-      transition: 0.2s; 
-      :hover { 
-         height: 220px;
-         height: 15vw;
-      width: 37.5vw;
-      right: 11.5%
-      }
-  }
-  
-  }
-   
+}
 
-  
 
+
+
+ }
 `
