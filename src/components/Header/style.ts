@@ -29,7 +29,6 @@ box-shadow: -1px 1px 4px -1px rgba(168,166,168,1);
 
 export const ContainerGeralMenu = styled.div` 
 display: flex; 
-
 align-items: center; 
 width: 33%; 
 
@@ -75,7 +74,7 @@ display: flex;
 flex-direction: column;
 justify-content: center;
 font-size: 1vw;
-
+z-index: 2000; 
 background: var(--branco);
 height: auto;
 -webkit-box-shadow: 0px 2px 3px -1px rgba(135,133,135,1);

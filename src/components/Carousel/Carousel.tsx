@@ -1,6 +1,7 @@
 import React, {useEffect, useState} from 'react'
-import { Container } from './style'
+import { ArrowLeft,ArrowRight, Container } from './style'
 import Data from './data'
+
  
 interface props { 
     url: string 
@@ -14,7 +15,7 @@ function Carousel() {
 
 
  useEffect(() => { 
-              console.log('sim ' , DataFinale.length)
+             
  }, [DataFinale])
 
  useEffect(() => {  }
@@ -46,7 +47,7 @@ function Carousel() {
     const cinco = Data[quinto]
      
     setFinale([um.url , dois.url, tres.url, quatro.url, cinco.url])
-    console.log(um , dois , tres, quatro, cinco) 
+    
 
   } , [])
   
@@ -76,7 +77,7 @@ function Carousel() {
              onClick = {() => RollLeft()}
 
            className='toleft' >
-              <strong>left</strong>
+             <ArrowLeft/> 
            </div>
 
           <div className={Classes[0]} >
@@ -114,11 +115,11 @@ function Carousel() {
                        <div 
                         onClick = {() => RollRight()}
                        className='toright' >
-              <strong>right</strong>
+              <strong><ArrowRight/> </strong>
            </div>
                 
              </div> 
-         ) : <div> <strong>load</strong> </div>
+         ) : <div> <strong>Load</strong> </div>
        }
        </Container>
      )

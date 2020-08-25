@@ -9,7 +9,7 @@ function YouWillLike() {
 
   <VideosContainer>
       {   CanaisAoVivoQueAchamosQueVocêVaiGostar.map(stream => (
-            <StreamItem>
+            <StreamItem key={stream.id} >
                     <div className='Hover'  >
                   <div className='LiveAndEspec' >
                    <img src={stream.image} />

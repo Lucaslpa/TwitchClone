@@ -1,14 +1,27 @@
-import React from 'react' 
+import React, {useEffect , useState} from 'react' 
 import { Container , ContainerStreamers ,ContainerFollowAndRecomended
  , ContainerSearch , InputSearch, 
 SearchImg, ContainerViews, NameAndCategory,StreamerItem,ArrowfromRight
 ,StreamerImg , TitleStreamer} from './style'
 import ButtonIcon from '../buttonIcon/button'
-import {Streamer , Recomendação} from '../../pages/Home/DataExample'
+import { Streamer ,  Recomendação} from '../../pages/Home/DataExample'
  
-
+interface props { 
+    id: number, 
+    image: string
+      ,
+      Name: string , 
+      Category: string ,
+      Viewers: number,
+      Title: string
+    
+ 
+}
 
 function FollowBar() { 
+
+
+
  
     return ( 
          <Container>

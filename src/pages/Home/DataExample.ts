@@ -1,3 +1,7 @@
+import image1 from './imagesExample/ImagesExample (1).jpg'
+import image2 from './imagesExample/ImagesExample (2).jpg'
+import image3 from './imagesExample/ImagesExample (3).jpg'
+
 export const Streamer =  [ 
     { 
         id: 1 , 
@@ -27,43 +31,51 @@ export const Streamer =  [
         Viewers: 11000, 
         Title: 'Text title'
      }, 
-     { 
-        id: 4 , 
-        image: 'https://static-cdn.jtvnw.net/jtv_user_pictures/cellbit-profile_image-6ad05a00a4f4acd6-70x70.jpeg'
-          ,
-          Name: 'Cellbit' , 
-          Category: 'Scrutinized' ,
-          Viewers: 11000,
-          Title: 'Text title'
-       },
-       { 
-        id: 5 , 
-        image: 'https://static-cdn.jtvnw.net/jtv_user_pictures/cellbit-profile_image-6ad05a00a4f4acd6-70x70.jpeg'
-          ,
-          Name: 'Cellbit' , 
-          Category: 'Scrutinized' ,
-          Viewers: 11000,
-          Title: 'Text title'
-       },
-       { 
-        id: 6 , 
-        image: 'https://static-cdn.jtvnw.net/jtv_user_pictures/cellbit-profile_image-6ad05a00a4f4acd6-70x70.jpeg'
-          ,
-          Name: 'Cellbit' , 
-          Category: 'Scrutinized' ,
-          Viewers: 11000,
-          Title: 'Text title'
-       },
-       { 
-        id: 7 , 
-        image: 'https://static-cdn.jtvnw.net/jtv_user_pictures/cellbit-profile_image-6ad05a00a4f4acd6-70x70.jpeg'
-          ,
-          Name: 'Cellbit' , 
-          Category: 'Scrutinized' ,
-          Viewers: 11000,
-          Title: 'Text title'
-       }
-]
+        {
+          id: 8, 
+          image: 'https://static-cdn.jtvnw.net/jtv_user_pictures/9f880583-4ff2-40e2-b66f-5b9e9b46ff31-profile_image-70x70.png'
+           ,
+           Name:'Lordsemilol' ,
+           Category: 'Legue of Legends' , 
+           Viewers: 1755 , 
+           Title: 'LIVE EXPLICATIVA E DEPOIS DO ALMOÇO TRYHARD'
+        } ,
+          {
+            id: 9 , 
+            Name: 'GiganteRichard' ,
+            image: 'https://static-cdn.jtvnw.net/jtv_user_pictures/319383a3-cf82-4296-a144-2c5add86612a-profile_image-70x70.png'
+            ,
+            Category: 'Ghost of Tsushima',
+            Viewers: 228 , 
+            Title: '📺 REPRISE 2X FARM // Ao vivo Terça 19h // !loj' 
+          },
+          {
+            id: 10 ,
+            Name: 'Baiano' ,
+            image: 'https://static-cdn.jtvnw.net/jtv_user_pictures/516f8a7d-e161-4394-b08f-b3916479c62e-profile_image-70x70.png',
+            Category: 'League of Legends', 
+            Viewers: 8300,
+            Title: '#BAIANALISTA50K'
+          },
+          
+          {
+            id: 11 ,
+            Name: 'Pescocofino' ,
+            image: 'https://static-cdn.jtvnw.net/jtv_user_pictures/5100fddb-50a2-40a7-b99a-5926b7cdb2d9-profile_image-70x70.png',
+            Category: 'Só na conversa', 
+            Viewers: 1200,
+            Title: 'irlzin de segunda e depois GTA 5 com cheats'
+          },
+          { 
+            id: 12 ,
+            Name: 'Davy Jones' ,
+            image: 'https://static-cdn.jtvnw.net/jtv_user_pictures/abe01c02-472a-43c7-89d5-deb170e61132-profile_image-70x70.png',
+            Category: 'Call of duty...', 
+            Viewers: 5000,
+            Title: 'O QUE SERÁ QUE VAI ACONTECER?'
+          }, 
+
+        ]
 
 export const Recomendação = [
   
@@ -82,30 +94,14 @@ export const Recomendação = [
           Category: 'Ciência e tecnologia' ,
           Viewers: 46,
           Title: 'Text title'
-     },
-     {  id: 3 , 
-      image: 'https://static-cdn.jtvnw.net/jtv_user_pictures/24700f10-84bf-4fc4-b7bb-9f9f062c0a46-profile_image-70x70.png'
-        ,
-        Name: 'Teomewhy' , 
-        Category: 'Ciência e tecnologia' ,
-        Viewers: 46,
-        Title: 'Text title'
-   },
-   {  id: 4, 
-    image: 'https://static-cdn.jtvnw.net/jtv_user_pictures/24700f10-84bf-4fc4-b7bb-9f9f062c0a46-profile_image-70x70.png'
-      ,
-      Name: 'Teomewhy' , 
-      Category: 'Ciência e tecnologia' ,
-      Viewers: 46,
-      Title: 'Text title'
- }
+     }
 
 ]
 
 
 export const CanaisAoVivoQueAchamosQueVocêVaiGostar = [ 
   {  id: 1, 
-    image: 'https://static-cdn.jtvnw.net/previews-ttv/live_user_pescocofino-440x248.jpg'
+    image: image1
       ,
       Name: 'pescocofino' , 
       Category: 'Só na convera' ,
@@ -114,7 +110,7 @@ export const CanaisAoVivoQueAchamosQueVocêVaiGostar = [
       Tags: 'Português'
  },
  {  id: 2, 
-  image: 'https://static-cdn.jtvnw.net/previews-ttv/live_user_gratis150ml-440x248.jpg'
+  image: image3
     ,
     Name: 'gratis150ml' , 
     Category: 'Terrary' ,
@@ -123,7 +119,7 @@ export const CanaisAoVivoQueAchamosQueVocêVaiGostar = [
     Tags: 'Português'
 },
 {  id: 3, 
-  image: 'https://static-cdn.jtvnw.net/previews-ttv/live_user_axtlol-440x248.jpg'
+  image: image2
     ,
     Name: 'aXtLOL' , 
     Category: 'Terrary' ,

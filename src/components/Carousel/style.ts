@@ -1,4 +1,19 @@
 import styled from 'styled-components' 
+import {ArrowIosForwardOutline,
+ArrowIosBackOutline} from '@styled-icons/evaicons-outline'
+
+export const ArrowRight =  styled(ArrowIosForwardOutline)`
+
+width: 2vw;
+fill: black ; 
+ 
+`
+
+export const ArrowLeft = styled(ArrowIosBackOutline)`
+width: 2vw;
+fill: black ; 
+ 
+`
 
 
 export  const Container = styled.div` 
@@ -12,19 +27,21 @@ export  const Container = styled.div`
     align-items: center; 
     padding: 1vw; 
 
+
+
     .toleft { 
        width: 3vw; 
        position: absolute; 
        display: flex;
        justify-content: center; 
        align-items: center; 
-       left: 10% ; 
+       left: 5% ; 
        height: 3vw;
-       background: black; 
+      
        color: white;
-       border-radius: 20px;
+       border-radius: 5px;
        :hover { 
-         background: rgba(0,0,0,0.6)
+         background: #dedede
        }
     }
     .toright { 
@@ -33,13 +50,13 @@ export  const Container = styled.div`
       display: flex;
        justify-content: center; 
        align-items: center; 
-      right: 10%; 
+      right: 5%; 
       height: 3vw; 
-      background: black; 
+     
        color: white;
-       border-radius: 20px;
+       border-radius: 5px;
        :hover { 
-         background: rgba(0,0,0,0.6)
+         background: #dedede
        }
     }
   
@@ -47,15 +64,13 @@ export  const Container = styled.div`
         height: 20vw;
         width: 30vw ; 
         position:absolute;
-        transition: 0.3s;
+     
        iframe { 
          
             height: 100%;
-            width: 100%;
-         
+            width: 100%;    
         }
     }
-
 .First {
    height: 14vw;
 
@@ -68,7 +83,6 @@ export  const Container = styled.div`
    width: 35.5vw;
   }
 }
-
 .Second { 
     z-index:10; 
     left: 21%; 
@@ -80,20 +94,10 @@ export  const Container = styled.div`
      width: 38.5vw; 
   }
 }
-
 .Terceiro { 
  z-index: 20; 
  width: 40vw;
-
-
- .StreamInfo { 
-     
-  
-     
- }
-
 }
-
 .Quarto { 
   z-index: 10; 
   right: 21%; 
@@ -105,7 +109,6 @@ export  const Container = styled.div`
      width: 38.5vw; 
   }
 }
-
 .Quinto { 
    height: 14vw;
  left: 17%; 

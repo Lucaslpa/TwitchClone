@@ -30,6 +30,7 @@ export const ContainerStreamers= styled.div`
   }
   .showmore { 
        font-size: 0.8vw; 
+       white-space: nowrap;
         cursor: pointer;
          color: #aa00d4; 
         width: 30%;
