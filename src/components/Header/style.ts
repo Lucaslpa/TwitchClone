@@ -14,6 +14,7 @@ import  {Twitch} from'@styled-icons/fa-brands'
 export const Container = styled.div` 
 position: sticky; 
 display: flex; 
+z-index: 1000;
 justify-content: space-between;
 width: 100%;
 height: max(4vw , min(10vw, 1vw)) ;

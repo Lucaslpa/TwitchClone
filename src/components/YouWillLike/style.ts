@@ -14,6 +14,7 @@ export  const Container = styled.div`
 
 export const VideosContainer = styled.div`
 display:flex;
+
 padding: 1vw;
 `
 export const StreamItem = styled.div` 

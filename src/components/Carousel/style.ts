@@ -17,7 +17,7 @@ fill: black ;
 
 
 export  const Container = styled.div` 
-
+  z-index: 0; 
  .Carousell { 
     display: flex; 
     position: relative;

@@ -2,10 +2,26 @@ import styled from 'styled-components'
 import {MagnifyingGlass} from'@styled-icons/entypo'
 import ArrowClose from'@styled-icons/boxicons-regular/ArrowFromRight'
 import { ArrowFromRight} from'@styled-icons/boxicons-regular'
+import { SuitHeart } from '@styled-icons/bootstrap'
+import { Videocam }  from '@styled-icons/ionicons-outline'
+
+
+export const VideoCam = styled(Videocam)`
+display: flex;
+justify-content: center; 
+margin-left: 0.9vw;
+ width: 1.5vw; 
+`
+export const Heart = styled(SuitHeart)`
+display: flex;
+justify-content: center; 
+margin-left:0.9vw;
+ width: 1.5vw; 
+`
 
 
 export const Container = styled.div`
-width: 17vw; 
+
 height: 44vw  ; 
 display: flex ;
 flex-direction: column ; 
@@ -23,7 +39,7 @@ export const ContainerStreamers= styled.div`
       box-sizing: border-box;
        display: flex; 
        padding: 1vw;
-      width: 100%;
+     
        height: 3vw;
        justify-content: space-between;
        align-items: center; 
@@ -33,7 +49,7 @@ export const ContainerStreamers= styled.div`
        white-space: nowrap;
         cursor: pointer;
          color: #aa00d4; 
-        width: 30%;
+       
         padding: 5px;
        :hover { 
         text-decoration: underline ;
@@ -52,7 +68,7 @@ width: 1.5vw;
 export const StreamerItem= styled.div` 
 height: 4vw; 
 display: flex; 
-width: 100%;
+
 height: 3.5vw;
 align-items: center; 
 transition: 0.1s;
@@ -62,12 +78,12 @@ cursor: pointer;
     .TitleStream { 
         position: absolute;
         span { 
-            width: 100%;
+           
             height: 100%;
             font-family: 'Quicksand', sans-serif;
         }
         padding: 10px;
- width: 13vw;
+ 
  height: auto; 
  background: #fcfcfc;
  border-radius: 10px; 
@@ -88,6 +104,14 @@ export const TitleStreamer = styled.div`
 export const StreamerImg= styled.img` 
 border-radius: 100%; 
 width: 2vw; 
+height: 2vw;
+margin-left: 0.6vw;
+`
+export const StreamerImgOff= styled.img` 
+border-radius: 100%; 
+width: 2vw; 
+-webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+ filter: grayscale(100%);
 height: 2vw;
 margin-left: 0.6vw;
 `

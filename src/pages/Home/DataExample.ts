@@ -3,7 +3,19 @@ import image2 from './imagesExample/ImagesExample (2).jpg'
 import image3 from './imagesExample/ImagesExample (3).jpg'
 
 export const Streamer =  [ 
-    { 
+  { 
+    id: 2 , 
+    image: 'https://static-cdn.jtvnw.net/jtv_user_pictures/yoda-profile_image-63cdc656c9f91fb4-70x70.jpeg'
+      ,
+      Name: 'YoDa' , 
+      Category: 'League of Legends' ,
+      Viewers: 18000,
+      Title: 'IRL PREPARACAO NEW WORLD / LEAGUE OF LEGEDIS'
+      ,
+      
+   } ,
+ 
+  { 
         id: 1 , 
         image: 'https://static-cdn.jtvnw.net/jtv_user_pictures/371d9c8a-d13a-470d-a27a-9b0fcb936fbd-profile_image-70x70.png'
           ,
@@ -11,16 +23,10 @@ export const Streamer =  [
           Category: 'League of Legends' ,
           Viewers: 7000 ,
           Title: 'Duo Yoda'
+          ,
+          
      } ,
-    { 
-      id: 2 , 
-      image: 'https://static-cdn.jtvnw.net/jtv_user_pictures/yoda-profile_image-63cdc656c9f91fb4-70x70.jpeg'
-        ,
-        Name: 'YoDa' , 
-        Category: 'League of Legends' ,
-        Viewers: 18000,
-        Title: 'IRL PREPARACAO NEW WORLD / LEAGUE OF LEGEDIS'
-     } ,
+   
      
      { 
       id: 3 , 
@@ -30,6 +36,8 @@ export const Streamer =  [
         Category: 'Scrutinized' ,
         Viewers: 11000, 
         Title: 'Text title'
+        ,
+        
      }, 
         {
           id: 8, 
@@ -39,6 +47,8 @@ export const Streamer =  [
            Category: 'Legue of Legends' , 
            Viewers: 1755 , 
            Title: 'LIVE EXPLICATIVA E DEPOIS DO ALMOÇO TRYHARD'
+           ,
+           
         } ,
           {
             id: 9 , 
@@ -48,14 +58,18 @@ export const Streamer =  [
             Category: 'Ghost of Tsushima',
             Viewers: 228 , 
             Title: '📺 REPRISE 2X FARM // Ao vivo Terça 19h // !loj' 
+            ,
+            
           },
           {
             id: 10 ,
             Name: 'Baiano' ,
             image: 'https://static-cdn.jtvnw.net/jtv_user_pictures/516f8a7d-e161-4394-b08f-b3916479c62e-profile_image-70x70.png',
             Category: 'League of Legends', 
-            Viewers: 8300,
-            Title: '#BAIANALISTA50K'
+            Viewers: 0,
+            Title: '#BAIANALISTA50K',
+            Status: 'Offline',
+            Videos: '6 novos videos '
           },
           
           {
@@ -63,16 +77,20 @@ export const Streamer =  [
             Name: 'Pescocofino' ,
             image: 'https://static-cdn.jtvnw.net/jtv_user_pictures/5100fddb-50a2-40a7-b99a-5926b7cdb2d9-profile_image-70x70.png',
             Category: 'Só na conversa', 
-            Viewers: 1200,
-            Title: 'irlzin de segunda e depois GTA 5 com cheats'
+            Viewers: 0,
+            Title: 'irlzin de segunda e depois GTA 5 com cheats',
+            Status: 'Offline',
+            Videos: '2 novos videos'
           },
           { 
             id: 12 ,
             Name: 'Davy Jones' ,
             image: 'https://static-cdn.jtvnw.net/jtv_user_pictures/abe01c02-472a-43c7-89d5-deb170e61132-profile_image-70x70.png',
             Category: 'Call of duty...', 
-            Viewers: 5000,
-            Title: 'O QUE SERÁ QUE VAI ACONTECER?'
+            Viewers: 0,
+            Title: 'O QUE SERÁ QUE VAI ACONTECER?',
+            Status: 'Offline',
+            Videos: '10 novos videos'
           }, 
 
         ]
