@@ -1,3 +1,2 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-<img width='900px' src='https://uploaddeimagens.com.br/images/002/848/336/full/ff.png?1598384812' />
+Link deployed: https://modest-easley-84049a.netlify.app/
+<img width='800px' src='https://uploaddeimagens.com.br/images/002/848/336/full/ff.png?1598384812' />
