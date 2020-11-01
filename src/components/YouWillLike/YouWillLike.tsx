@@ -6,7 +6,6 @@ function YouWillLike() {
         <Container>
              <strong  className='Title' >
     Canais ao vivo que achamos que vai gostar</strong>
-
   <VideosContainer>
       {   CanaisAoVivoQueAchamosQueVocêVaiGostar.map(stream => (
             <StreamItem key={stream.id} >
@@ -20,14 +19,11 @@ function YouWillLike() {
                    <strong>{stream.Title}</strong>
                     <span>{stream.Name}</span>
                     <span>{ stream.Category }</span>
-                    <span className='Tag' >{stream.Tags}</span>
-                          
-
+                    <span className='Tag' >{stream.Tags}</span>                   
                          </StreamItem>
      ))
                 }
-  </VideosContainer>
-           
+  </VideosContainer>     
         </Container>
      )
 }

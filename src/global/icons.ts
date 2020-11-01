@@ -10,5 +10,4 @@ import Search from'@styled-icons/entypo/MagnifyingGlass'
 import Backup from'@styled-icons/material-outlined/SettingsBackupRestore'
 import Delete from'@styled-icons/typicons/DeleteOutline'
 import Twitchs from'@styled-icons/fa-brands/Twitch'
-
 import {Twitch} from 'styled-icons/fa-brands'

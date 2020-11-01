@@ -29,12 +29,12 @@ flex-direction: column;
     .LiveAndEspec{
      height: 13vw;
     position: relative;
-    border-radius: 10px;  
+    border-radius:4%;  
     width: 24vw;
     transition: 0.1s;
     :hover { 
-         border-bottom: solid 0.5vw #aa0ee8;
-         border-left: solid 0.5vw #aa0ee8;
+         border-bottom: solid 0.6vw #aa0ee8;
+         border-left: solid 0.6vw #aa0ee8;
          transform: translateY(-4px);
             }  
     img {

@@ -16,9 +16,6 @@ function App() {
        <Carousel/>
        <YouWillLike/>
        </ContainerNavigation>
-        
-
-       
     </SubContainer> 
        
    </Container>

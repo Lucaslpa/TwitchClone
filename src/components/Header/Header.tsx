@@ -7,14 +7,10 @@ Crown,Sino , HorizontalMenuContainer,HorizontalMenuNav} from './style'
 import ButtonIcon from '../buttonIcon/button'
 
 function App() {
-
-    const [menu , setMenu] = useState(false)
-
-  
+   const [menu , setMenu] = useState(false)
    function toggleMenu () { 
     setMenu(!menu)
    }
-
   return (
    <Container>
        <ContainerGeralMenu>
@@ -23,14 +19,13 @@ function App() {
        <LinksMenu> Procurar </LinksMenu>
        <LinksMenu>  Esports </LinksMenu>
        <LinksMenu>  Musica </LinksMenu>
-       <HorizontalMenuContainer  onClick={(e) => setMenu(!menu)} >
+       <HorizontalMenuContainer  onClick={() => setMenu(!menu)} >
              <ButtonIcon>
                      <HorizontalMenu/> 
                      <div className='HoverText' >
                         <span> Mais </span>
                      </div>
-             </ButtonIcon>
-                   
+             </ButtonIcon>            
                   {menu && ( <HorizontalMenuNav>
                        <strong>Geral</strong>
                        <li> Anunciantes</li>
@@ -52,9 +47,7 @@ function App() {
                     <div className='HoverText' >
                         <span> Novo loot prime </span>           
                     </div>
-           </ButtonIcon>
-                   
-               
+           </ButtonIcon>        
            <ButtonIcon>
                 <div className='Notification' >
                     <span className='numberNotification' > 2</span>
@@ -70,15 +63,12 @@ function App() {
                     Sussurros
                 </div>
          </ButtonIcon>
-       
-      
         <strong className='BuyBits'>
            Comprar Bits
         </strong>
         <img className='UserProfilePic' src='https://static.vecteezy.com/system/resources/previews/000/574/512/non_2x/vector-sign-of-user-icon.jpg'
          /> 
-       </ContainerUserInfo>
-        
+       </ContainerUserInfo>   
    </Container>
   );
 }

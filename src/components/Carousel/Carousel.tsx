@@ -81,43 +81,41 @@ function Carousel() {
            </div>
 
           <div className={Classes[0]} >
-                    <iframe width="420" height="315"
+                    <iframe title={Classes[0]} width="420" height="315"
    src={DataFinale[0]}>
    
    </iframe>
                      </div >
    
                       <div className={Classes[1]}>
-                      <iframe width="420" height="315"
+                      <iframe  title={Classes[1]} width="420" height="315"
    src={DataFinale[1]}>
    
    </iframe>
                       </div>
                       <div className={Classes[2]}>
-                      <iframe width="420" height="315"
+                      <iframe title={Classes[2]} width="420" height="315"
    src={DataFinale[2]}>
    
    </iframe>
                       </div>
                       <div className={Classes[3]}>
-                      <iframe width="420" height="315"
+                      <iframe title={Classes[3]} width="420" height="315"
    src={DataFinale[3]}>
    
    </iframe>
                       </div>
                       <div className={Classes[4]}>
-                      <iframe width="420" height="315"
+                      <iframe title={Classes[4]} width="420" height="315"
    src={DataFinale[4]}>
    
    </iframe>
                        </div>
-
                        <div 
                         onClick = {() => RollRight()}
                        className='toright' >
               <strong><ArrowRight/> </strong>
-           </div>
-                
+           </div>           
              </div> 
          ) : <div> <strong>Load</strong> </div>
        }

@@ -64,7 +64,7 @@ export const Streamer =  [
           {
             id: 10 ,
             Name: 'Baiano' ,
-            image: 'https://static-cdn.jtvnw.net/jtv_user_pictures/516f8a7d-e161-4394-b08f-b3916479c62e-profile_image-70x70.png',
+            image: 'https://static-cdn.jtvnw.net/jtv_user_pictures/877be12d-5898-416c-8f44-5ad6dc3c7931-profile_image-70x70.png',
             Category: 'League of Legends', 
             Viewers: 0,
             Title: '#BAIANALISTA50K',
@@ -145,7 +145,4 @@ export const CanaisAoVivoQueAchamosQueVocêVaiGostar = [
     Title: 'CBLOL E FINAL DA CHANPIONS !Bet',
     Tags: 'Português'
 }
-
-
- 
 ]
